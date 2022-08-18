@@ -9,6 +9,8 @@ document.getElementById('btn-deposit').addEventListener('click', function(){
         document.getElementById('depBalance').innerText = parseInt(depositAmt) + parseInt(existingDepositField);
         
         document.getElementById('balance').innerText = parseInt(depositAmt) + parseInt(balAmt);
+
+        document.getElementById('user-deposit').value=''
     }
     else{
         alert("Please type a valid deposit amount.")
@@ -29,7 +31,7 @@ document.getElementById('btn-withdraw').addEventListener('click', function(){
         
         document.getElementById('balance').innerText = balAmtNumber - withdrawAmtNumber;
 
-        //document.getElementById('user-withdraw').value=''
+        document.getElementById('user-withdraw').value=''
     }
     else{
         alert("Please type a valid deposit amount.")
