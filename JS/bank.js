@@ -35,3 +35,7 @@ document.getElementById('btn-withdraw').addEventListener('click', function(){
         alert("Please type a valid deposit amount.")
     }
 })
+
+function logout(){
+    window.location='./index.html';
+}
