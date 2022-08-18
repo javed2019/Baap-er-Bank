@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baap Er Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+      <h2 class="text-2xl font-bold text-center text-violet-600 m-5">Welcome to Baap er Bank</h2>
+    </header>  
+    <main>
+      <section class="w-1/4 border bg-blue-100 mx-auto">
+        <div><h3 class="text-center my-1 font-bold text-indigo-500">Please Login</h3></div>
+        <div class="flex flex-col items-center">
+          <input type="email" placeholder="Input email" id="user-email" class=" my-1 w-3/4 pl-2">
+          <input type="password" placeholder="Input Password" id="user-password" class=" my-1 w-3/4 pl-2">
+          <button id="btn-submit" class="rounded-md bg-indigo-500 text-white font-bold w-3/4 mt-2 mb-5 hover:bg-violet-600">Submit</button>
+        </div>
+      </section>
+    </main>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+      <script src="./JS/login.js"></script>
+</body>
+</html>

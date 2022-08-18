@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baap Er Bank:: Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+      <h2 class="text-2xl font-bold text-center text-violet-600 m-5">Welcome to Baap er Bank: DashBoard</h2>
+    </header>  
+    <main>
+      <section class="w-3/4 border mx-auto my-5">
+        <div class="grid grid-cols-3 gap-4 m-3">
+            <div class="bg-green-100 p-3 rounded-xl">
+                <h3 class="text-2xl text-green-800 font-bold">Deposit</h3>
+                <h2 class="text-2xl">$<span id="depBalance" >00</span></h2>
+            </div>
+            <div class="bg-red-100 p-3 rounded-xl">
+                <h3 class="text-2xl text-red-800 font-bold">Withdraw</h3>
+                <h2 class="text-2xl">$<span id="withdrawBalance" >00</span></h2>
+            </div>
+            <div class="bg-yellow-100 p-3 rounded-xl">
+                <h3 class="text-2xl text-yellow-800 font-bold">Balance</h3>
+                <h2 class="text-2xl">$<span id="balance" >1240</span></h2>
+            </div>
+        </div>
+      </section>
+
+      <section class="w-3/4 border mx-auto my-5">
+        <div class="grid grid-cols-2 gap-4 m-3">
+            <div class="bg-sky-800 p-3 rounded-xl">
+                <h3 class="text-2xl text-white font-bold text-center my-3">Please Deposit</h3>
+                <div class="flex flex-col items-center">
+                    <input type="number" placeholder="Input deposit amount" id="user-deposit" class=" my-1 w-3/4 pl-2 rounded-md">
+                    <button id="btn-deposit" class="rounded-md bg-gray-200 font-bold w-3/4 mt-2 mb-5 hover:bg-white">Deposit</button>
+                </div>
+            </div>
+
+            <div class="bg-rose-600 p-3 rounded-xl">
+                <h3 class="text-2xl text-white font-bold text-center my-3">Please Withdraw</h3>
+                <div class="flex flex-col items-center">
+                    <input type="number" placeholder="Input Withdrawal amount" id="user-withdraw" class=" my-1 w-3/4 pl-2 rounded-md">
+                    <button id="btn-withdraw" class="rounded-md bg-gray-200 font-bold w-3/4 mt-2 mb-5 hover:bg-white">Withdraw</button>
+                </div>
+            </div>
+        </div>
+      </section>
+    </main>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+      <script src="./JS/bank.js"></script>
+</body>
+</html>
